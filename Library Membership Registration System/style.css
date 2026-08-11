@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.registration-card,
+.confirmation-card,
+.error-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.registration-card h2,
+.confirmation-card h2,
+.error-card h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5366d8;
+}
+
+/* Confirmation */
+
+.confirmation-card {
+    text-align: center;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.confirmation-card h1 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.success-text {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.membership-details {
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.membership-details h2 {
+    background-color: #667eea;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row span {
+    color: #555;
+}
+
+.detail-row strong {
+    color: #222;
+    text-align: right;
+}
+
+/* Error */
+
+.error-card {
+    margin-top: 50px;
+}
+
+.error-card h2 {
+    color: #dc3545;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.error-message li {
+    margin: 8px 0;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #667eea;
+    color: white;
+    padding: 12px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #5366d8;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .registration-card,
+    .confirmation-card,
+    .error-card {
+        padding: 20px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .detail-row strong {
+        text-align: left;
+    }
+}
