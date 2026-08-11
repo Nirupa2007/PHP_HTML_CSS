@@ -1,0 +1,251 @@
+/* General Page Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f7;
+    color: #333;
+    min-height: 100vh;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+/* Form Box */
+
+.form-box,
+.result-box {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1f3c88;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+/* Input and Select */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+/* Input Focus */
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1f3c88;
+}
+
+
+/* Buttons */
+
+.submit-button,
+.reset-button,
+.back-button {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+/* Submit Button */
+
+.submit-button {
+    background: #1f3c88;
+    color: white;
+    width: 48%;
+}
+
+.submit-button:hover {
+    background: #162d68;
+}
+
+
+/* Reset Button */
+
+.reset-button {
+    background: #777;
+    color: white;
+    width: 48%;
+}
+
+.reset-button:hover {
+    background: #555;
+}
+
+
+/* Success Message */
+
+.success-message {
+    background: #e8f7ed;
+    border-left: 5px solid #28a745;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.success-message h2 {
+    color: #218838;
+    margin-bottom: 8px;
+}
+
+.success-message p {
+    color: #333;
+}
+
+
+/* Error Message */
+
+.error-message {
+    background: #fdeaea;
+    border-left: 5px solid #dc3545;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.error-message h2 {
+    color: #c82333;
+    margin-bottom: 10px;
+}
+
+.error-message ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+
+/* Details Table */
+
+.details-table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.detail-row {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    width: 40%;
+    padding: 15px;
+    background: #f4f6f8;
+    font-weight: bold;
+}
+
+.detail-value {
+    width: 60%;
+    padding: 15px;
+}
+
+
+/* Back Button */
+
+.back-button {
+    background: #1f3c88;
+    color: white;
+}
+
+.back-button:hover {
+    background: #162d68;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .form-box,
+    .result-box {
+        padding: 20px;
+    }
+
+    .submit-button,
+    .reset-button {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .detail-row {
+        display: block;
+    }
+
+    .detail-label,
+    .detail-value {
+        width: 100%;
+    }
+
+    .detail-label {
+        padding-bottom: 8px;
+    }
+
+    .detail-value {
+        padding-top: 8px;
+    }
+}
