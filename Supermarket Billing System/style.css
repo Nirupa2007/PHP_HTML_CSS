@@ -1,0 +1,467 @@
+/* =========================================
+   GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    background: linear-gradient(135deg, #176b3a, #2e8b57);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    color: #176b3a;
+    font-size: 20px;
+}
+
+
+/* =========================================
+   FORM BOX
+   ========================================= */
+
+.form-box {
+    background-color: white;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #176b3a;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group > label,
+.product-grid label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.product-grid input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:focus,
+.product-grid input:focus {
+    border-color: #2e8b57;
+}
+
+small {
+    display: block;
+    color: #777;
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   PRODUCT BOX
+   ========================================= */
+
+.product-box {
+    background-color: #f1f7f3;
+    border: 1px solid #d5e7dc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.product-box h3 {
+    color: #176b3a;
+    margin-bottom: 15px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.3fr;
+    gap: 15px;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.submit-button,
+.reset-button,
+.print-button,
+.back-button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.submit-button {
+    background-color: #176b3a;
+    color: white;
+    flex: 1;
+}
+
+.submit-button:hover {
+    background-color: #12562e;
+}
+
+.reset-button {
+    background-color: #777;
+    color: white;
+    flex: 1;
+}
+
+.reset-button:hover {
+    background-color: #555;
+}
+
+
+/* =========================================
+   PAGE CONTAINER
+   ========================================= */
+
+.page-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+/* =========================================
+   INVOICE
+   ========================================= */
+
+.invoice-box {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.error-message {
+    background-color: #fdeaea;
+    border-left: 5px solid #dc3545;
+    padding: 18px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+
+.error-message h2 {
+    color: #c82333;
+    margin-bottom: 10px;
+}
+
+.error-message ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   INVOICE HEADER
+   ========================================= */
+
+.invoice-header {
+    text-align: center;
+    border-bottom: 2px solid #176b3a;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.invoice-header h1 {
+    color: #176b3a;
+    font-size: 32px;
+}
+
+.invoice-header p {
+    color: #666;
+    font-size: 18px;
+}
+
+.invoice-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    background-color: #f1f7f3;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+
+/* =========================================
+   CUSTOMER DETAILS
+   ========================================= */
+
+.customer-info {
+    margin-bottom: 25px;
+}
+
+.customer-info h2 {
+    color: #176b3a;
+    margin-bottom: 10px;
+}
+
+.customer-info p {
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+th {
+    background-color: #176b3a;
+    color: white;
+    padding: 13px;
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f9f8;
+}
+
+
+/* =========================================
+   BILL SUMMARY
+   ========================================= */
+
+.bill-summary {
+    max-width: 500px;
+    margin-left: auto;
+    border-top: 2px solid #ddd;
+    padding-top: 15px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.discount-row {
+    color: #dc3545;
+}
+
+.tax-row {
+    color: #555;
+}
+
+.grand-total {
+    display: flex;
+    justify-content: space-between;
+    background-color: #176b3a;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+
+/* =========================================
+   THANK YOU
+   ========================================= */
+
+.thank-you {
+    text-align: center;
+    background-color: #f1f7f3;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.thank-you h3 {
+    color: #176b3a;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-button {
+    display: inline-block;
+    background-color: #176b3a;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #12562e;
+}
+
+
+/* =========================================
+   PRINT BUTTON
+   ========================================= */
+
+.print-button {
+    background-color: #2e8b57;
+    color: white;
+}
+
+.print-button:hover {
+    background-color: #246b43;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .form-box,
+    .invoice-box {
+        padding: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .invoice-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .bill-summary {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   PRINT STYLES
+   ========================================= */
+
+@media print {
+
+    body {
+        background-color: white;
+    }
+
+    .button-group {
+        display: none;
+    }
+
+    .invoice-box {
+        box-shadow: none;
+    }
+
+}
