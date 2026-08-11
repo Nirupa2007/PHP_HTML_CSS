@@ -1,0 +1,669 @@
+/* =========================================
+   RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: #f4f6fb;
+
+    color: #333;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+
+    background:
+        linear-gradient(
+            135deg,
+            #283593,
+            #5c6bc0
+        );
+
+    color: white;
+
+    padding: 50px 20px;
+
+}
+
+
+.header-content {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.profile-image {
+
+    width: 110px;
+
+    height: 110px;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    color: #283593;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    border: 5px solid rgba(
+        255,
+        255,
+        255,
+        0.4
+    );
+
+}
+
+
+.header h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.header p {
+
+    font-size: 18px;
+
+    opacity: 0.9;
+
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+}
+
+
+/* =========================================
+   PROFILE CARD
+   ========================================= */
+
+.profile-card {
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+}
+
+
+/* =========================================
+   SECTION HEADING
+   ========================================= */
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 25px;
+
+    border-bottom: 2px solid #eee;
+
+}
+
+
+.heading-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: #e8eaf6;
+
+    font-size: 24px;
+
+}
+
+
+.section-heading h2 {
+
+    color: #283593;
+
+    font-size: 25px;
+
+}
+
+
+.section-heading p {
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   DETAILS GRID
+   ========================================= */
+
+.details-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 18px;
+
+}
+
+
+.detail-item {
+
+    padding: 18px;
+
+    background-color: #f8f9ff;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #5c6bc0;
+
+}
+
+
+.label {
+
+    display: block;
+
+    color: #777;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+.value {
+
+    display: block;
+
+    color: #333;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+}
+
+
+.highlight {
+
+    color: #283593;
+
+    font-size: 22px;
+
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+.table-container {
+
+    margin-top: 30px;
+
+}
+
+
+.table-container h3 {
+
+    color: #283593;
+
+    margin-bottom: 15px;
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+th,
+td {
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+
+}
+
+
+th {
+
+    background-color: #283593;
+
+    color: white;
+
+}
+
+
+tr:nth-child(even) {
+
+    background-color: #f7f8fc;
+
+}
+
+
+.status {
+
+    display: inline-block;
+
+    padding: 4px 12px;
+
+    border-radius: 20px;
+
+    background-color: #dff5e7;
+
+    color: #198754;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   CONTACT GRID
+   ========================================= */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 20px;
+
+}
+
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background-color: #f8f9ff;
+
+    border-radius: 8px;
+
+}
+
+
+.contact-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    min-width: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #e8eaf6;
+
+    font-size: 22px;
+
+}
+
+
+.contact-item span:not(.label) {
+
+    color: #333;
+
+    font-weight: 600;
+
+}
+
+
+.contact-item a {
+
+    color: #283593;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    word-break: break-word;
+
+}
+
+
+.contact-item a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================================
+   SKILLS
+   ========================================= */
+
+.skills-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+
+.skill {
+
+    padding: 9px 18px;
+
+    border-radius: 20px;
+
+    background-color: #e8eaf6;
+
+    color: #283593;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+
+    background-color: #283593;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    margin-top: 40px;
+
+}
+
+
+.footer p:first-child {
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+}
+
+
+.footer p:last-child {
+
+    font-size: 13px;
+
+    opacity: 0.8;
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+
+    .header {
+
+        padding: 35px 15px;
+
+    }
+
+
+    .header-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .profile-image {
+
+        width: 90px;
+
+        height: 90px;
+
+        font-size: 27px;
+
+    }
+
+
+    .container {
+
+        width: 94%;
+
+        margin-top: 25px;
+
+    }
+
+
+    .profile-card {
+
+        padding: 20px;
+
+    }
+
+
+    .section-heading {
+
+        align-items: flex-start;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    .details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    table {
+
+        min-width: 550px;
+
+    }
+
+
+    .table-container {
+
+        overflow-x: auto;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE SCREEN
+   ========================================= */
+
+@media (max-width: 400px) {
+
+
+    .header h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    .profile-card {
+
+        padding: 16px;
+
+    }
+
+
+    .detail-item {
+
+        padding: 14px;
+
+    }
+
+
+    .contact-item {
+
+        padding: 15px;
+
+    }
+
+}
