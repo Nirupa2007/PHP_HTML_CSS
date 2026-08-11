@@ -1,0 +1,859 @@
+/* =========================================
+   RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f5e9,
+            #f5f9f6
+        );
+
+    color: #333;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   LOGIN PAGE
+   ========================================= */
+
+.page-container {
+
+    width: 90%;
+
+    max-width: 500px;
+
+    margin: 50px auto;
+
+}
+
+
+/* =========================================
+   LOGIN CARD
+   ========================================= */
+
+.login-card {
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+}
+
+
+.bank-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    background-color: #e8f5e9;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+
+}
+
+
+.login-card h1 {
+
+    color: #1b5e20;
+
+    font-size: 30px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.subtitle {
+
+    color: #777;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* =========================================
+   SECURITY NOTE
+   ========================================= */
+
+.security-note {
+
+    background-color: #f1f8e9;
+
+    color: #33691e;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-group {
+
+    text-align: left;
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #444;
+
+    margin-bottom: 7px;
+
+}
+
+
+.form-group input {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+
+.form-group input:focus {
+
+    border-color: #43a047;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(
+            67,
+            160,
+            71,
+            0.12
+        );
+
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+   ========================================= */
+
+.login-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.login-button:hover {
+
+    background-color: #1b5e20;
+
+}
+
+
+/* =========================================
+   DEMO NOTE
+   ========================================= */
+
+.demo-note {
+
+    margin-top: 22px;
+
+    padding: 12px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 7px;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.footer p:first-child {
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+
+}
+
+
+/* =========================================
+   MESSAGE CARD
+   ========================================= */
+
+.message-card {
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+}
+
+
+.message-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background-color: #fdeaea;
+
+    color: #dc3545;
+
+    font-size: 30px;
+
+}
+
+
+.message-card h1 {
+
+    color: #dc3545;
+
+    margin-bottom: 10px;
+
+}
+
+
+.message-card p {
+
+    color: #777;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   ERROR LIST
+   ========================================= */
+
+.error-list {
+
+    text-align: left;
+
+    margin: 20px 0;
+
+    padding: 15px 15px 15px 35px;
+
+    background-color: #fff5f5;
+
+    border: 1px solid #f5c2c7;
+
+    border-radius: 8px;
+
+}
+
+
+.error-list li {
+
+    color: #842029;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-button {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 25px;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+}
+
+
+.back-button:hover {
+
+    background-color: #1b5e20;
+
+}
+
+
+/* =========================================
+   DASHBOARD
+   ========================================= */
+
+.dashboard-container {
+
+    width: 92%;
+
+    max-width: 1000px;
+
+    margin: 25px auto;
+
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+
+    background-color: white;
+
+    padding: 16px 22px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(
+            0,
+            0,
+            0,
+            0.07
+        );
+
+}
+
+
+.bank-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #1b5e20;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+}
+
+
+.logout-button {
+
+    padding: 9px 18px;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+.logout-button:hover {
+
+    background-color: #b02a37;
+
+}
+
+
+/* =========================================
+   WELCOME
+   ========================================= */
+
+.welcome-section {
+
+    margin: 35px 0 20px;
+
+}
+
+
+.welcome-section p {
+
+    color: #777;
+
+}
+
+
+.welcome-section h1 {
+
+    color: #1b5e20;
+
+    font-size: 32px;
+
+    margin: 5px 0;
+
+}
+
+
+.last-login {
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================
+   BALANCE
+   ========================================= */
+
+.balance-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #1b5e20,
+            #43a047
+        );
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow:
+        0 7px 20px
+        rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
+
+}
+
+
+.balance-icon {
+
+    font-size: 35px;
+
+}
+
+
+.balance-card p {
+
+    opacity: 0.85;
+
+    margin-bottom: 5px;
+
+}
+
+
+.balance-card h2 {
+
+    font-size: 30px;
+
+}
+
+
+/* =========================================
+   DETAILS CARD
+   ========================================= */
+
+.details-card,
+.services-card {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-top: 20px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(
+            0,
+            0,
+            0,
+            0.07
+        );
+
+}
+
+
+.details-card h2,
+.services-card h2 {
+
+    color: #1b5e20;
+
+    margin-bottom: 20px;
+
+}
+
+
+.details-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 15px;
+
+}
+
+
+.detail-item {
+
+    padding: 15px;
+
+    background-color: #f8f9f8;
+
+    border-radius: 8px;
+
+}
+
+
+.detail-item span {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 12px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.detail-item strong {
+
+    color: #333;
+
+}
+
+
+.active-status {
+
+    color: #198754 !important;
+
+}
+
+
+/* =========================================
+   SERVICES
+   ========================================= */
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            1fr
+        );
+
+    gap: 15px;
+
+}
+
+
+.service {
+
+    text-align: center;
+
+    padding: 20px 10px;
+
+    border: 1px solid #eee;
+
+    border-radius: 8px;
+
+}
+
+
+.service span {
+
+    font-size: 25px;
+
+}
+
+
+.service p {
+
+    margin-top: 8px;
+
+    color: #555;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   SECURITY FOOTER
+   ========================================= */
+
+.security-footer {
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin: 20px 0;
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .page-container {
+
+        width: 94%;
+
+        margin: 30px auto;
+
+    }
+
+
+    .login-card,
+    .message-card {
+
+        padding: 28px 20px;
+
+    }
+
+
+    .dashboard-container {
+
+        width: 94%;
+
+    }
+
+
+    .details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .services-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+    }
+
+
+    .welcome-section h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .balance-card h2 {
+
+        font-size: 25px;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .navbar {
+
+        padding: 13px;
+
+    }
+
+
+    .bank-name {
+
+        font-size: 18px;
+
+    }
+
+
+    .logout-button {
+
+        padding: 8px 12px;
+
+    }
+
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .balance-card {
+
+        padding: 20px;
+
+    }
+
+}
