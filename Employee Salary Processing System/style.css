@@ -1,0 +1,266 @@
+```css
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f5f9;
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+
+/* Main Container */
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* Header */
+
+.header {
+    background: #243b55;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 15px;
+}
+
+
+/* Form Box */
+
+.form-box {
+    background: white;
+    padding: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 25px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #243b55;
+}
+
+
+/* Button */
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #243b55;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #141e30;
+}
+
+
+/* Result Box */
+
+.result-box {
+    background: white;
+    padding: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.result-box h2 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 25px;
+}
+
+
+/* Result Items */
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item span {
+    color: #666;
+}
+
+.result-item strong {
+    color: #222;
+}
+
+
+/* Gross Salary */
+
+.highlight {
+    background: #eef3f8;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.highlight strong {
+    color: #243b55;
+}
+
+
+/* Deduction */
+
+.deduction {
+    color: #c0392b;
+}
+
+.deduction strong {
+    color: #c0392b;
+}
+
+
+/* Net Salary */
+
+.net-salary {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #d4edda;
+    border-radius: 8px;
+}
+
+.net-salary p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #155724;
+    margin-bottom: 8px;
+}
+
+.net-salary h3 {
+    font-size: 35px;
+    color: #155724;
+}
+
+
+/* Error */
+
+.error-box {
+    text-align: center;
+}
+
+.error-box h2 {
+    color: #c0392b;
+}
+
+.error-box p {
+    color: #c0392b;
+    margin-bottom: 25px;
+}
+
+
+/* Back Button */
+
+.back-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #243b55;
+    color: white;
+    padding: 13px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background: #141e30;
+}
+
+
+/* Footer */
+
+.footer {
+    background: #243b55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 12px 12px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .form-box,
+    .result-box {
+        padding: 25px 20px;
+    }
+
+    .result-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .net-salary h3 {
+        font-size: 28px;
+    }
+}
+```
