@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+    color: #333;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+/* Form Card */
+
+.form-card,
+.result-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-card h1 {
+    text-align: center;
+    color: #263b80;
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+
+.form-card h2 {
+    color: #263b80;
+    margin: 25px 0 15px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+
+/* Inputs */
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #263b80;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+
+button,
+.back-button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #263b80;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+}
+
+
+button:hover,
+.back-button:hover {
+    background: #1b2c63;
+}
+
+
+.reset-button {
+    background: #777;
+}
+
+
+.reset-button:hover {
+    background: #555;
+}
+
+
+.print-button {
+    background: #198754;
+}
+
+
+.print-button:hover {
+    background: #146c43;
+}
+
+
+/* Result Heading */
+
+.result-heading {
+    text-align: center;
+    border-bottom: 2px solid #263b80;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+
+.result-heading h1 {
+    color: #263b80;
+}
+
+
+.result-heading p {
+    color: #777;
+}
+
+
+/* Student Information */
+
+.student-info {
+    background: #f1f4fb;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+
+.student-info p {
+    margin: 5px 0;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+
+th {
+    background: #263b80;
+    color: white;
+    padding: 13px;
+    text-align: left;
+}
+
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+tr:nth-child(even) {
+    background: #f8f9fc;
+}
+
+
+/* Pass and Fail */
+
+.pass {
+    color: #198754;
+    font-weight: bold;
+}
+
+
+.fail {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+
+/* Summary */
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+
+.summary-box {
+    background: #f1f4fb;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+.summary-box span {
+    display: block;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+
+.summary-box strong {
+    font-size: 22px;
+    color: #263b80;
+}
+
+
+.summary-box .grade {
+    font-size: 28px;
+}
+
+
+/* Error */
+
+.error {
+    background: #fdeaea;
+    border-left: 5px solid #dc3545;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+
+.error h2 {
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+
+.error ul {
+    margin-left: 20px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .form-card,
+    .result-card {
+        padding: 20px;
+    }
+
+
+    .summary {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .buttons {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Print */
+
+@media print {
+
+    .buttons {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .result-card {
+        box-shadow: none;
+    }
+
+}
