@@ -1,0 +1,543 @@
+/* =========================================
+   GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f6fb;
+
+    color: #333;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+    width: 90%;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.page-container {
+    width: 90%;
+
+    max-width: 750px;
+
+    margin: 50px auto;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #4527a0,
+        #7e57c2
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+
+.header h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.header p {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   FORM CARD
+   ========================================= */
+
+.form-card {
+    background-color: white;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-card h2 {
+    color: #4527a0;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.description {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FORM GROUP
+   ========================================= */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-family: inherit;
+}
+
+
+.form-group input:focus {
+    outline: none;
+
+    border-color: #7e57c2;
+
+    box-shadow:
+        0 0 0 2px rgba(126, 87, 194, 0.15);
+}
+
+
+.form-group small {
+    display: block;
+
+    color: #777;
+
+    margin-top: 6px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button-group {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.validate-button,
+.reset-button,
+.back-button {
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    text-align: center;
+}
+
+
+.validate-button {
+    background-color: #4527a0;
+
+    color: white;
+
+    flex: 1;
+}
+
+
+.validate-button:hover {
+    background-color: #311b92;
+}
+
+
+.reset-button {
+    background-color: #777;
+
+    color: white;
+
+    flex: 1;
+}
+
+
+.reset-button:hover {
+    background-color: #555;
+}
+
+
+/* =========================================
+   RESULT CARD
+   ========================================= */
+
+.result-card {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================
+   SUCCESS HEADER
+   ========================================= */
+
+.success-header {
+    text-align: center;
+
+    border-bottom: 2px solid #7e57c2;
+
+    padding-bottom: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.success-icon {
+    width: 65px;
+
+    height: 65px;
+
+    line-height: 65px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background-color: #198754;
+
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+
+.success-header h1 {
+    color: #4527a0;
+
+    margin-top: 15px;
+}
+
+
+.success-header p {
+    color: #777;
+}
+
+
+/* =========================================
+   DETAILS
+   ========================================= */
+
+.details-section {
+    margin-bottom: 25px;
+}
+
+
+.details-section h2 {
+    color: #4527a0;
+
+    margin-bottom: 15px;
+}
+
+
+.detail-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.detail-row:nth-child(even) {
+    background-color: #f8f7fc;
+}
+
+
+.detail-row span {
+    font-weight: bold;
+
+    color: #666;
+}
+
+
+.detail-row strong {
+    color: #4527a0;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+   ========================================= */
+
+.success-message {
+    background-color: #eaf7ef;
+
+    border-left: 5px solid #198754;
+
+    padding: 20px;
+
+    border-radius: 6px;
+
+    margin-bottom: 25px;
+}
+
+
+.success-message h3 {
+    color: #198754;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================================
+   ERROR HEADER
+   ========================================= */
+
+.error-header {
+    text-align: center;
+
+    border-bottom: 2px solid #dc3545;
+
+    padding-bottom: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.error-icon {
+    width: 65px;
+
+    height: 65px;
+
+    line-height: 65px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+
+.error-header h1 {
+    color: #dc3545;
+
+    margin-top: 15px;
+}
+
+
+.error-header p {
+    color: #777;
+}
+
+
+/* =========================================
+   ERROR LIST
+   ========================================= */
+
+.error-list {
+    background-color: #fff3f3;
+
+    border-left: 5px solid #dc3545;
+
+    padding: 20px;
+
+    border-radius: 6px;
+
+    margin-bottom: 25px;
+}
+
+
+.error-list h2 {
+    color: #dc3545;
+
+    margin-bottom: 12px;
+
+    font-size: 21px;
+}
+
+
+.error-list ul {
+    list-style: none;
+}
+
+
+.error-list li {
+    padding: 8px 0;
+
+    border-bottom: 1px solid #f0cccc;
+}
+
+
+.error-list li:last-child {
+    border-bottom: none;
+}
+
+
+.error-bullet {
+    display: inline-block;
+
+    width: 23px;
+
+    height: 23px;
+
+    line-height: 21px;
+
+    text-align: center;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    border-radius: 50%;
+
+    margin-right: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-button {
+    display: inline-block;
+
+    background-color: #4527a0;
+
+    color: white;
+}
+
+
+.back-button:hover {
+    background-color: #311b92;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    background-color: #4527a0;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+
+    .form-card,
+    .result-card {
+        padding: 20px;
+    }
+
+
+    .button-group {
+        flex-direction: column;
+    }
+
+
+    .detail-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+
+}
