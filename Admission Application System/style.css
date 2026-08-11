@@ -1,0 +1,451 @@
+/* =========================================
+   GENERAL STYLES
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    background: linear-gradient(135deg, #243b55, #4b6cb7);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.header h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.header p {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #29457c;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-box {
+    background-color: white;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #29457c;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.form-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.required {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FORM GROUP
+   ========================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+/* =========================================
+   INPUTS
+   ========================================= */
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #4b6cb7;
+}
+
+
+/* =========================================
+   RADIO BUTTONS
+   ========================================= */
+
+.radio-group {
+    display: flex;
+    gap: 25px;
+    margin-top: 8px;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.submit-button,
+.reset-button,
+.print-button,
+.back-button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Submit */
+
+.submit-button {
+    background-color: #29457c;
+    color: white;
+    flex: 1;
+}
+
+.submit-button:hover {
+    background-color: #1d325d;
+}
+
+
+/* Reset */
+
+.reset-button {
+    background-color: #777;
+    color: white;
+    flex: 1;
+}
+
+.reset-button:hover {
+    background-color: #555;
+}
+
+
+/* =========================================
+   RESULT PAGE
+   ========================================= */
+
+.page-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.result-box {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+   ========================================= */
+
+.success-message {
+    background-color: #e8f7ed;
+    border-left: 5px solid #28a745;
+    padding: 18px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+
+.success-message h2 {
+    color: #218838;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+   ========================================= */
+
+.error-message {
+    background-color: #fdeaea;
+    border-left: 5px solid #dc3545;
+    padding: 18px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+
+.error-message h2 {
+    color: #c82333;
+    margin-bottom: 10px;
+}
+
+.error-message ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   ACKNOWLEDGEMENT
+   ========================================= */
+
+.acknowledgement-header {
+    text-align: center;
+    border-bottom: 2px solid #29457c;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.acknowledgement-header h1 {
+    color: #29457c;
+    margin-bottom: 5px;
+}
+
+.acknowledgement-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.acknowledgement-number {
+    margin-top: 15px;
+    background-color: #f1f4fa;
+    padding: 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.acknowledgement-section h2 {
+    color: #29457c;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   DETAILS TABLE
+   ========================================= */
+
+.details-table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.detail-row {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    width: 40%;
+    padding: 14px;
+    background-color: #f1f4fa;
+    font-weight: bold;
+}
+
+.detail-value {
+    width: 60%;
+    padding: 14px;
+}
+
+
+/* =========================================
+   NOTICE
+   ========================================= */
+
+.notice {
+    background-color: #fff8e1;
+    border-left: 5px solid #f0ad4e;
+    padding: 18px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.notice h3 {
+    color: #856404;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-button {
+    display: inline-block;
+    background-color: #29457c;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #1d325d;
+}
+
+
+/* =========================================
+   PRINT BUTTON
+   ========================================= */
+
+.print-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.print-button:hover {
+    background-color: #218838;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .form-box,
+    .result-box {
+        padding: 20px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .detail-row {
+        display: block;
+    }
+
+    .detail-label,
+    .detail-value {
+        width: 100%;
+    }
+
+    .detail-label {
+        padding-bottom: 7px;
+    }
+
+    .detail-value {
+        padding-top: 7px;
+    }
+
+}
