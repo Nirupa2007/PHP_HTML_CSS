@@ -1,0 +1,665 @@
+/* =========================================
+   GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f7f9;
+
+    color: #333;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CONTAINERS
+   ========================================= */
+
+.container {
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+.page-container {
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: 45px auto;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #1565c0,
+        #42a5f5
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+
+.header h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.header p {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   FORM CARD
+   ========================================= */
+
+.form-card {
+    background-color: white;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-card h2 {
+    color: #1565c0;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.description {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 17px;
+
+    font-family: inherit;
+}
+
+
+.form-group input:focus {
+    outline: none;
+
+    border-color: #1565c0;
+}
+
+
+.form-group small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #777;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button-group {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+.calculate-button,
+.reset-button,
+.back-button,
+.print-button {
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    text-align: center;
+}
+
+
+.calculate-button {
+    background-color: #1565c0;
+
+    color: white;
+
+    flex: 1;
+}
+
+
+.calculate-button:hover {
+    background-color: #0d47a1;
+}
+
+
+.reset-button {
+    background-color: #777;
+
+    color: white;
+
+    flex: 1;
+}
+
+
+.reset-button:hover {
+    background-color: #555;
+}
+
+
+/* =========================================
+   SLAB CARD
+   ========================================= */
+
+.slab-card {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 40px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.slab-card h2 {
+    text-align: center;
+
+    color: #1565c0;
+
+    margin-bottom: 20px;
+}
+
+
+.table-container {
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+}
+
+
+th {
+    background-color: #1565c0;
+
+    color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f5f8fc;
+}
+
+
+/* =========================================
+   RESULT CARD
+   ========================================= */
+
+.result-card {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================
+   SUCCESS
+   ========================================= */
+
+.success-header {
+    text-align: center;
+
+    border-bottom: 2px solid #42a5f5;
+
+    padding-bottom: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.success-icon {
+    width: 65px;
+
+    height: 65px;
+
+    line-height: 65px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background-color: #198754;
+
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+
+.success-header h1 {
+    color: #1565c0;
+
+    margin-top: 15px;
+}
+
+
+.success-header p {
+    color: #777;
+}
+
+
+/* =========================================
+   UNITS DISPLAY
+   ========================================= */
+
+.units-display {
+    background-color: #eaf3ff;
+
+    border-left: 5px solid #1565c0;
+
+    padding: 20px;
+
+    border-radius: 6px;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+
+.units-display span {
+    display: block;
+
+    color: #666;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.units-display strong {
+    color: #1565c0;
+
+    font-size: 26px;
+}
+
+
+/* =========================================
+   BILL SECTION
+   ========================================= */
+
+.bill-section h2 {
+    color: #1565c0;
+
+    margin-bottom: 15px;
+}
+
+
+.bill-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 16px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.bill-row:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+
+.bill-row div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.bill-row div span {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-top: 3px;
+}
+
+
+.bill-row > strong {
+    color: #1565c0;
+
+    font-size: 17px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TOTAL
+   ========================================= */
+
+.total-box {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #1565c0;
+
+    color: white;
+
+    padding: 22px;
+
+    border-radius: 8px;
+
+    margin-top: 25px;
+}
+
+
+.total-box span {
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.total-box strong {
+    font-size: 28px;
+}
+
+
+/* =========================================
+   INFORMATION BOX
+   ========================================= */
+
+.info-box {
+    background-color: #eaf7ef;
+
+    border-left: 5px solid #198754;
+
+    padding: 20px;
+
+    border-radius: 6px;
+
+    margin-top: 25px;
+}
+
+
+.info-box h3 {
+    color: #198754;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.error-message {
+    background-color: #fdeaea;
+
+    border-left: 5px solid #dc3545;
+
+    padding: 25px;
+
+    border-radius: 6px;
+
+    margin-bottom: 25px;
+}
+
+
+.error-icon {
+    width: 50px;
+
+    height: 50px;
+
+    line-height: 50px;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.error-message h1 {
+    color: #dc3545;
+
+    margin-bottom: 8px;
+}
+
+
+.error-message ul {
+    margin: 15px 0 0 20px;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-button {
+    display: inline-block;
+
+    background-color: #1565c0;
+
+    color: white;
+}
+
+
+.back-button:hover {
+    background-color: #0d47a1;
+}
+
+
+/* =========================================
+   PRINT BUTTON
+   ========================================= */
+
+.print-button {
+    background-color: #198754;
+
+    color: white;
+}
+
+
+.print-button:hover {
+    background-color: #146c43;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    background-color: #1565c0;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+
+    .form-card,
+    .slab-card,
+    .result-card {
+        padding: 20px;
+    }
+
+
+    .button-group {
+        flex-direction: column;
+    }
+
+
+    .bill-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .total-box {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   PRINT
+   ========================================= */
+
+@media print {
+
+    .button-group {
+        display: none;
+    }
+
+
+    body {
+        background-color: white;
+    }
+
+
+    .result-card {
+        box-shadow: none;
+    }
+
+}
