@@ -1,0 +1,597 @@
+/* =========================================
+   GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f3f7f8;
+
+    color: #333;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+.page-container {
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: 45px auto;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #00695c,
+        #00897b
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+
+.header h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.header p {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   FORM CARD
+   ========================================= */
+
+.form-card {
+    background-color: white;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-card h2 {
+    color: #00695c;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.description {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group > label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-family: inherit;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: #00897b;
+}
+
+
+/* =========================================
+   RADIO BUTTONS
+   ========================================= */
+
+.radio-group {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.radio-option {
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-weight: normal !important;
+
+    margin-bottom: 0 !important;
+}
+
+
+.radio-option input {
+    width: auto;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button-group {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+.submit-button,
+.reset-button,
+.back-button,
+.print-button {
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    text-align: center;
+}
+
+
+.submit-button {
+    background-color: #00695c;
+
+    color: white;
+
+    flex: 1;
+}
+
+
+.submit-button:hover {
+    background-color: #004d40;
+}
+
+
+.reset-button {
+    background-color: #777;
+
+    color: white;
+
+    flex: 1;
+}
+
+
+.reset-button:hover {
+    background-color: #555;
+}
+
+
+/* =========================================
+   RESULT CARD
+   ========================================= */
+
+.result-card {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================
+   SUCCESS
+   ========================================= */
+
+.success-header {
+    text-align: center;
+
+    border-bottom: 2px solid #00897b;
+
+    padding-bottom: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.success-icon {
+    width: 65px;
+
+    height: 65px;
+
+    line-height: 65px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background-color: #198754;
+
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+
+.success-header h1 {
+    color: #00695c;
+
+    margin-top: 15px;
+}
+
+
+.success-header p {
+    color: #777;
+}
+
+
+/* =========================================
+   CONFIRMATION
+   ========================================= */
+
+.confirmation-box {
+    background-color: #e7f6f3;
+
+    border: 1px solid #9adbd2;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.confirmation-box span {
+    display: block;
+
+    color: #555;
+
+    margin-bottom: 5px;
+}
+
+
+.confirmation-box strong {
+    color: #00695c;
+
+    font-size: 24px;
+}
+
+
+/* =========================================
+   DETAILS
+   ========================================= */
+
+.details-section {
+    margin-bottom: 25px;
+}
+
+
+.details-section h2 {
+    color: #00695c;
+
+    margin-bottom: 15px;
+}
+
+
+.detail-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.detail-row:nth-child(even) {
+    background-color: #f7faf9;
+}
+
+
+.detail-row span {
+    color: #666;
+
+    font-weight: bold;
+}
+
+
+.detail-row strong {
+    color: #00695c;
+
+    text-align: right;
+}
+
+
+.address-row {
+    align-items: flex-start;
+}
+
+
+.blood-group {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   INFORMATION BOX
+   ========================================= */
+
+.info-box {
+    background-color: #eaf7ef;
+
+    border-left: 5px solid #198754;
+
+    padding: 20px;
+
+    border-radius: 6px;
+
+    margin-bottom: 25px;
+}
+
+
+.info-box h3 {
+    color: #198754;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.error-message {
+    background-color: #fdeaea;
+
+    border-left: 5px solid #dc3545;
+
+    padding: 25px;
+
+    border-radius: 6px;
+
+    margin-bottom: 25px;
+}
+
+
+.error-icon {
+    width: 50px;
+
+    height: 50px;
+
+    line-height: 50px;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.error-message h1 {
+    color: #dc3545;
+
+    margin-bottom: 8px;
+}
+
+
+.error-message ul {
+    margin: 15px 0 0 20px;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-button {
+    display: inline-block;
+
+    background-color: #00695c;
+
+    color: white;
+}
+
+
+.back-button:hover {
+    background-color: #004d40;
+}
+
+
+/* =========================================
+   PRINT BUTTON
+   ========================================= */
+
+.print-button {
+    background-color: #198754;
+
+    color: white;
+}
+
+
+.print-button:hover {
+    background-color: #146c43;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    background-color: #00695c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+
+    .form-card,
+    .result-card {
+        padding: 20px;
+    }
+
+
+    .radio-group {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .detail-row {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .detail-row strong {
+        text-align: left;
+    }
+
+
+    .button-group {
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================================
+   PRINT
+   ========================================= */
+
+@media print {
+
+    .button-group {
+        display: none;
+    }
+
+
+    body {
+        background-color: white;
+    }
+
+
+    .result-card {
+        box-shadow: none;
+    }
+
+}
