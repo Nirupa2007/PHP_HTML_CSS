@@ -1,0 +1,241 @@
+```css
+/* General Page Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f5f9;
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+/* Main Container */
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Header */
+
+.header {
+    background: #243b55;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 15px;
+}
+
+/* Form Box */
+
+.form-box {
+    background: white;
+    padding: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #243b55;
+}
+
+/* Form Groups */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #243b55;
+}
+
+/* Submit Button */
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #243b55;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #141e30;
+}
+
+/* Result Box */
+
+.result-box {
+    background: white;
+    padding: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.result-box h2 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 25px;
+}
+
+/* Result Items */
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item span {
+    color: #666;
+}
+
+.result-item strong {
+    color: #222;
+}
+
+/* Percentage */
+
+.percentage {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #243b55;
+    margin-top: 25px;
+}
+
+.attendance-label {
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Eligibility */
+
+.eligible,
+.not-eligible {
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.eligible {
+    background: #d4edda;
+    color: #155724;
+}
+
+.not-eligible {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Error Message */
+
+.error-box {
+    text-align: center;
+}
+
+.error-box h2 {
+    color: #c0392b;
+}
+
+.error-box p {
+    margin-bottom: 25px;
+    color: #c0392b;
+}
+
+/* Back Button */
+
+.back-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #243b55;
+    color: white;
+    padding: 13px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background: #141e30;
+}
+
+/* Footer */
+
+.footer {
+    background: #243b55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 12px 12px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .form-box,
+    .result-box {
+        padding: 25px 20px;
+    }
+
+    .result-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .percentage {
+        font-size: 40px;
+    }
+}
+```
