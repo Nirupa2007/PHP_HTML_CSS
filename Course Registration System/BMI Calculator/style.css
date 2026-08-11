@@ -1,0 +1,771 @@
+/* =========================================
+   RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f5e9,
+            #f5f9f6
+        );
+
+    color: #333;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 650px;
+
+    margin: 45px auto;
+
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+}
+
+
+.header h1 {
+
+    color: #2e7d32;
+
+    font-size: 34px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.header p {
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   MAIN CARD
+   ========================================= */
+
+.card {
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+}
+
+
+.card h2 {
+
+    color: #2e7d32;
+
+    margin-bottom: 8px;
+
+}
+
+
+.instruction {
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #444;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+
+.form-group input {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+
+}
+
+
+.form-group input:focus {
+
+    border-color: #43a047;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(
+            67,
+            160,
+            71,
+            0.12
+        );
+
+}
+
+
+.form-group small {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.calculate-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        transform 0.2s;
+
+}
+
+
+.calculate-button:hover {
+
+    background-color: #1b5e20;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   RESULT CARD
+   ========================================= */
+
+.result-card {
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+}
+
+
+.success-icon,
+.result-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+}
+
+
+.success-icon {
+
+    background-color: #dff5e7;
+
+    color: #198754;
+
+}
+
+
+.result-icon {
+
+    background-color: #fdeaea;
+
+    color: #dc3545;
+
+}
+
+
+.result-card h1 {
+
+    color: #2e7d32;
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.error-card h1 {
+
+    color: #dc3545;
+
+}
+
+
+.result-message {
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   BMI DISPLAY
+   ========================================= */
+
+.bmi-display {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f5e9,
+            #f1f8e9
+        );
+
+    border: 1px solid #c8e6c9;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.bmi-display span {
+
+    display: block;
+
+    color: #666;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.bmi-display strong {
+
+    display: block;
+
+    color: #2e7d32;
+
+    font-size: 48px;
+
+}
+
+
+/* =========================================
+   RESULT DETAILS
+   ========================================= */
+
+.result-details {
+
+    text-align: left;
+
+    border: 1px solid #eee;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+
+}
+
+
+.result-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 18px;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+.result-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.result-row span {
+
+    color: #777;
+
+}
+
+
+.result-row strong {
+
+    color: #333;
+
+    text-align: right;
+
+}
+
+
+.result-row .status {
+
+    color: #2e7d32;
+
+}
+
+
+/* =========================================
+   RECOMMENDATION
+   ========================================= */
+
+.recommendation {
+
+    text-align: left;
+
+    background-color: #fff8e1;
+
+    border-left: 5px solid #f9a825;
+
+    border-radius: 6px;
+
+    padding: 18px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.recommendation h2 {
+
+    color: #8d6e00;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.recommendation p {
+
+    color: #665500;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   BMI TABLE
+   ========================================= */
+
+.bmi-table {
+
+    text-align: left;
+
+    border: 1px solid #eee;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+
+}
+
+
+.bmi-table h2 {
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    font-size: 17px;
+
+    padding: 12px 15px;
+
+}
+
+
+.category {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 11px 15px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+
+}
+
+
+.category:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.category strong {
+
+    color: #555;
+
+}
+
+
+/* =========================================
+   ERROR LIST
+   ========================================= */
+
+.error-list {
+
+    text-align: left;
+
+    background-color: #fff5f5;
+
+    border: 1px solid #f5c2c7;
+
+    border-radius: 8px;
+
+    padding: 15px 15px 15px 35px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.error-list li {
+
+    color: #842029;
+
+    margin-bottom: 5px;
+
+}
+
+
+.error-list li:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-button {
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition:
+        background-color 0.2s,
+        transform 0.2s;
+
+}
+
+
+.back-button:hover {
+
+    background-color: #1b5e20;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   DISCLAIMER
+   ========================================= */
+
+.disclaimer {
+
+    margin-top: 20px;
+
+    color: #888;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.footer p:first-child {
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        width: 94%;
+
+        margin: 30px auto;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .card,
+    .result-card {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .result-card h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .bmi-display strong {
+
+        font-size: 40px;
+
+    }
+
+
+    .result-row {
+
+        flex-direction: column;
+
+        gap: 5px;
+
+    }
+
+
+    .result-row strong {
+
+        text-align: left;
+
+    }
+
+
+    .category {
+
+        flex-direction: column;
+
+        gap: 3px;
+
+    }
+
+}
